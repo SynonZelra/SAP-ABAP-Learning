@@ -1,0 +1,28 @@
+ABAP - Advanced Business Application Programming
+High-Level Language
+Need a basis of Java and SQL
+
+3-Tier Architecture
+  - Database      - RDBMS
+  - Application   - ABAP
+  - Presentation  - SAP GUI
+  
+System Distribution
+  - Development System
+  - Testing System
+  - Production System
+Transport system to transfer data and transactions into the next tier
+
+Types of Programs
+  - Reports
+  - Dynpros
+
+Work Processes
+  - Dispatcher
+      Controls the distribution of work process to system users
+  - Dynpro Processer
+      Handle dialogue control, only on the flowing logic not data process
+  - ABAP Processer
+      Receive information from dialogue and process data
+  - Database Interface
+      Database inpendent ABAP transactions that ensures all codes works right
