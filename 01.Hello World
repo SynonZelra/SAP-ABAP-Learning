@@ -1,0 +1,48 @@
+REPORT ZHELLO1.
+WRITE 'Hello World'.
+  * Start with "Z" ensures the report resides in customer name space.
+  * Every statement ends with a period.
+  * The ABAP language is not case sensitive.
+  * REPORT [Program_name] is always the first line.
+  
+REPORT Z_Test_123_01.
+Write 'This is ABAP Tutorial'.
+  * Every text will be converted into upper case.
+  * String in quotes not included.
+  * ABAP do not care where a statement begins or ends.
+  * ABAP has no restrict on statement layouts.
+
+Colon usage
+Write 'Hellow'.
+Write 'APAP'.
+Write 'Wordl'.
+  * This is equal to the following
+Write: 'Hellow',
+       'APAP',
+       'World'.
+  * Also equals to the following
+Write: 'Hellow', 'ABAP', 'World'.
+
+Comments usage
+* This is the comment line
+  * '*' is used in a full-line comment.
+Write 'Hellow'. "This is the comment.
+  * '"' is used in a partial comment.
+
+No-Zero useage
+REPORT Z_Test_123_01.
+DATA: W_NUR(10) TYPE N.
+MOVE 50 TO W_NUR(10).
+WRITE W_NUR NO-ZERO
+  * The output will be 50.
+  * If there's no 'NO-ZERO', the output will be 0000000050.
+
+SKIP usage
+WRITE 'This is the 1st line'.
+SKIP.
+WRITE 'This is the 2nd line'.
+  * The output will be the following:
+      This is the 1st line
+      This is the 2nd line
+  * SKIP number_of_lines can be used to skip certian line directly.
+  * SKIP TO LINE number_of_lines can be used to skip to certain line directly.
