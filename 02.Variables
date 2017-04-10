@@ -1,0 +1,51 @@
+Data Types
+  ===============================
+  | Variable |  Type  |  Legth  |
+  |==========|========|=========|
+  |    X     |  Byte  |  1byte  |
+  |    C     |  Text  |  1char  |
+  |    I     | Integer| 4 bytes |
+  |    F     |  Float | 8 bytes |
+  |    P     | Packed | 8 bytes |
+  ===============================
+  
+Example:
+  REPORT YR_SEP_12.
+  
+  DATA text_line TYPE C LENGTH 40.
+  text_line = 'A Chapter on Data Types'.
+  WRITE text_line.
+  
+  DATA text_string TYPE STRING.
+  test_string: 'A Program in ABAP'.
+  WRITE: /test_string.
+  
+  DATA d_date TYPE D.
+  d_date = SY-DATUM.
+  WRITE: /d_date.
+  
+Output:
+  A Chapter on Data Types
+  A Program in ABAP
+  12092015
+  
+Formula:
+  DATA <f> TYPE <type> VALUE <val>.
+
+Example 2:
+  REPORT ZTest123_01.
+  PARAMETERS: NAME(10) TYPE C,
+              CLASS TYPE I,
+              SCORE TYPE P DECIMALS 2,
+              CONNECT TYPE MARA-MATNR.
+
+Output:
+  When using pramater function, output displays a list to fill in variables.
+
+
+Exampel 3:
+  CONSTANTS PQR TYPE P DECIMALS 4 VALUE '1.2356'.
+  WRITE: / 'The value of PQR is:', PQR.
+
+Output:
+  The value of PQR is: 1.2356
