@@ -1,0 +1,47 @@
+Operators
+
+1.Calculation operators, e.g. A=20, B=40, C=10
+  ===========================================
+  |   Operator   |   Calculation   | Result |
+  |=========================================|
+  |      +       |      A + B      |   60   |
+  |      -       |      A - B      |   20   |
+  |      *       |      A * B      |  800   |
+  |      /       |      B / A      |    2   |
+  |     mod      |     B mod A     |    0   |
+  |-----------------------------------------|
+  |   =  (EQ)    |      A = B      |not ture|
+  |   <> (NE)    |      A <> B     |  true  |
+  |   <  (LT)    |      A < B      |  true  |
+  |   >  (GT)    |      A > B      |not true|
+  |   <= (LE)    |      A <= B     |  true  |
+  |   >= (GE)    |      A >= B     |not true|
+  |-----------------------------------------|
+  | BETWEEN AND  |A BETWEEN B AND C|  true  |
+  |  IS INITIAL  |  A IS INITIAL   |  true  |
+  |IS NOT INITIAL| A IS NOT INTIAL |  true  |
+  ===========================================
+
+2.Bit operators
+  ====================================
+  | A | B | NOT (A) | AND | OR | XOR |
+  |==================================|
+  | 0 | 0 |    1    |  0  | 0  |  0  |
+  | 0 | 1 |    1    |  0  | 1  |  1  |
+  | 1 | 0 |    1    |  0  | 1  |  1  |
+  | 1 | 1 |    1    |  1  | 1  |  0  |
+  ====================================
+
+3.String operators
+  =========================================================================
+  |          Operator           |                   Logic                 |
+  |=======================================================================|
+  | CO (Contain Only)           | if A is totally in B                    |
+  | CN (Not Contain Only)       | if A contains char not in B             |
+  | CA (Contains Any)           | if A contains at least one char in B    |
+  | NA (Not Contains Any)       | if A does not contain any char in B     |
+  | CS (Contain a String)       | if A contains char in B                 |
+  | NS (Not Contain a String)   | if A does not contain char string in B  |
+  | CP (Contain a Pattern)      | if A contains the pattern in B          |
+  | NP (Not Contains a Pattern) | if A does not contain the pattern in B  |
+  =========================================================================
