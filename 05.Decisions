@@ -1,0 +1,52 @@
+Decisions
+
+1.If Statements
+  Example:
+    Report YH_SEP_15.
+    Data Title_1(20) TYPE C.
+    Title_1 = 'Tutorials'.
+    If Title_1 = 'Tutorials'.
+    wrtite 'This is IF Statement'.
+    ENDIF.
+  
+  OUTPUT:
+    This is IF Statement
+
+2.If Else Statement
+  Example:
+    Report YH_SEP_15.
+    Data Title_1(20) TYPE C.
+    Title_1 = 'Tutorials'.
+    IF Title_1 = 'Tutorial'.
+    write 'This is IF Statement'.
+    ELSE.
+    write 'This is Else Statement'.
+    ENDIF.
+  
+  OUTPUT:
+    This is Else Statement
+ 
+The statement can be expanded via 'if...elseif...elseif...else'.
+
+3.Case Statement
+  Example:
+    Report YH_SEP_15.
+    Data: Title_1(10) Type C.
+          Title_2(10) Type C.
+    Title_1 = 'ABAP'.
+    Title_2 = 'Programming'.
+    Case Title_2.
+      when 'ABAP'.
+        write 'This is not the title'.
+      when 'Tutorials'.
+        write 'This is not the title'.
+      when 'Limited'.
+        write 'This is not the title'.
+      when 'Programming'.
+        write 'Yes, this is the title'.
+      when Others.
+        write 'Sorry, mismatch.'.
+    ENDCASE.
+  
+  OUTPUT:
+    Yes, this is the title
