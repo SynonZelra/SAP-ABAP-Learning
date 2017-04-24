@@ -1,0 +1,85 @@
+Loops
+
+1.While Loop
+  Example:
+    Report YS_SEP_15.
+    DATA: a type i.
+    a = 0.
+    While a <> 8.
+      WRITE: /'This is the line: ', a.
+      a = a + 1.
+    ENDWHILE.
+  
+  OUTPUT:
+    This is the line: 0
+    This is the line: 1
+    This is the line: 2
+    This is the line: 3
+    This is the line: 4
+    This is the line: 5
+    This is the line: 6
+    This is the line: 7
+
+2.Do Loop
+  Example:
+    Report YS_SEP_15.
+    Do 5 times.
+    Write: /'Hellow'.
+    ENDDO.
+  
+  OUTPUT:
+    Hellow
+    Hellow
+    Hellow
+    Hellow
+    Hellow
+
+Loop Controls
+
+1.Continue
+  If the continue statement is true, the loop will skip to next round.
+  
+  Example:
+    Report YH_SEP_15.
+    Do 5 times.
+    IF SY-INDEX = 3.
+      Continue.
+    ENDIF.
+    Write: / SY-INDEX.
+    ENDDO.
+  
+  OUTPUT:
+    1
+    2
+    4
+    5
+
+2.Check
+  If the check statement is true, the loop will be executed.
+
+  Example:
+    Report YH_SEP_15.
+    Do 5 times.
+    Check SY-INDEX between 3 and 4.
+    Write: / SY-INDEX.
+    ENDDO.
+  
+  OUTPUT:
+    3
+    4
+
+3.Exit
+  If the exit statement is true, the whole loop will be terminated.
+  
+  Example:
+    Report YH_SEP_15.
+    Do 5 times.
+    If SY-INDEX = 3.
+      Exit.
+    ENDIF.
+    Write: / SY-INDEX.
+    ENDDO.
+  
+  OUTPUT:
+    1
+    2
